@@ -1,23 +1,12 @@
 import React from 'react'
-import DisplayFunctions from '../../helpers/DisplayFunctions'
-import {SamplePageObj} from '../../helpers/SamplePageObj'
-
+import { Link } from 'react-router-dom'
 import './books.css'
 
 const Books = ({fontColor, color, setFontColor, setColor}) => {
-
-
   return (
     <div className="books-container">
-        <h1 style={{width: "100%", height: "fit-content",textAlign: "center", backgroundColor: color, color: fontColor, margin: "0", padding: "15px 5px"}}>Books</h1>
-        <div className="rect-container">
-            {
-                SamplePageObj.map((rect, index) => {
-                    console.log(rect)
-                    return DisplayFunctions[rect.displayFunctionName](rect)
-                })
-            }
-        </div>
+        <h1 style={{width: "100%", height: "fit-content",textAlign: "center", padding: "15px 5px", color: fontColor, backgroundColor: color, marginTop: "0"}}>Books</h1>
+        <Link to="/samplereader" style={{color: fontColor, backgroundColor: color, padding: "15px", borderRadius: "10px", margin: "auto"}}>go to sample reader</Link>
     </div>
   )
 }
