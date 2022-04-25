@@ -1,0 +1,32 @@
+.navbar-container {
+    width: 100vw;
+    min-height: 50px;
+    box-shadow: 0 0 3px #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: absolute;
+    top: 0;
+    right: 0;
+    padding: 10px;
+}
+
+.navbar-container a {
+    text-decoration: none;
+    padding: 10px;
+    margin: 5px;
+}
+
+.nav-right {
+    width: fit-content;
+    height: fit-content;
+    display: flex;
+}
+
+.nav-btn:hover {
+    transform: scale(1.05);
+}
+
+.nav-btn:active {
+    transform: scale(.95)
+}

@@ -1,0 +1,19 @@
+.signup-container {
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+    min-height: 90vh;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+
+.signup-h1 {
+    width: "100%";
+    height: "fit-content";
+    text-align: "center";
+    margin: "0";
+    padding: "15px 5px";
+}
