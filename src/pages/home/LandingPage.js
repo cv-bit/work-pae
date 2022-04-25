@@ -21,10 +21,6 @@ const LandingPage = ({color, fontColor, setColor, setFontColor, bgColor, setBgCo
         localStorage.setItem('bgColor', value)
     }
 
-    useEffect(() => {
-        console.log(localStorage)
-    })
-
   return (
     <div className="landingpage-container">
         <h1 style={{width: "100%", height: "fit-content",textAlign: "center", padding: "15px 5px", color: fontColor, backgroundColor: color, marginTop: "0"}}>Practical American English</h1>
@@ -38,7 +34,10 @@ const LandingPage = ({color, fontColor, setColor, setFontColor, bgColor, setBgCo
         <Modal onClick={() => changeColor("#ccccff")} style={{backgroundColor: "#ccccff"}}/>
         <Modal onClick={() => changeColor("#ff4500")} style={{backgroundColor: "#ff4500"}}/>
         <Modal onClick={() => changeColor("#9884fc")} style={{backgroundColor: "#9884fc"}}/>
-        <input type="color" style={{width: "150px", height: "150px", margin: "15px"}}/>
+        <div style={{width: "100%", display: "flex", flexDirection: "column", justifyContent: "center", alignItems: "center"}}>
+            <h1>choose your own</h1>
+            <input type="color" style={{width: "150px", height: "150px", margin: "15px"}}/>
+        </div>
         <div style={{width: "100%", display: "flex", flexWrap: "wrap", justifyContent: "center"}}>
             <h1 style={{width: "100%", textAlign: "center"}}>set bg color</h1>
             <div style={{display: "flex"}}>
