@@ -18,3 +18,7 @@
 .simple-form-btn {
     padding: 5px;
 }
+
+.simple-form-btn:hover {
+    transform: scale(1.03);
+}
