@@ -8,7 +8,7 @@ const displayVideo = (arr) => {
             onMouseLeave={OnHoverFunctions[arr.hoverFunctionName]}
             src={arr.displayArgs[0]} 
             controls 
-            style={{backgroundColor: "black", width: arr.displayArgs[1], height: arr.displayArgs[2], position: "absolute", top: arr.displayArgs[3], right: arr.displayArgs[4]}} 
+            style={{backgroundColor: "black", width: arr.displayArgs[1], height: arr.displayArgs[2]}} 
             poster={"https://source.unsplash.com/random"}></video>
 }
 
@@ -18,7 +18,7 @@ const displayImage = (arr) => {
                 onMouseOver={OnHoverFunctions[arr.hoverFunctionName]}
                 onMouseLeave={OnHoverFunctions[arr.hoverFunctionName]}
                 src={arr.displayArgs[0]} 
-                style={{width: arr.displayArgs[1], height: arr.displayArgs[2], position: "absolute", top: arr.displayArgs[3], right: arr.displayArgs[4]}}
+                style={{width: arr.displayArgs[1], height: arr.displayArgs[2]}}
             />
 }
 
@@ -27,7 +27,7 @@ const displayRect = (arr) => {
                 onClick={OnClickFunctions[arr.onClickFunctionName]} 
                 onMouseOver={OnHoverFunctions[arr.hoverFunctionName]}
                 onMouseLeave={OnHoverFunctions[arr.hoverFunctionName]}
-                style={{backgroundColor: arr.displayArgs[0],opacity: "75%", width: arr.displayArgs[1], height: arr.displayArgs[2], position: "absolute", top: arr.displayArgs[3], right: arr.displayArgs[4]}}
+                style={{backgroundColor: arr.displayArgs[0],opacity: "75%", width: arr.displayArgs[1], height: arr.displayArgs[2]}}
             ></div>
 }
 
@@ -36,7 +36,7 @@ const displayText = (arr) => {
             onClick={OnClickFunctions[arr.onClickFunctionName]} 
             onMouseOver={OnHoverFunctions[arr.hoverFunctionName]}
             onMouseLeave={OnHoverFunctions[arr.hoverFunctionName]}
-            style={{width: arr.displayArgs[1], height: arr.displayArgs[2]                                                                                                                                                                                                                                      }}>
+            style={{width: arr.displayArgs[1], height: arr.displayArgs[2], margin: "15px"}}>
                 {arr.displayArgs[0]}
             </p>
 }
