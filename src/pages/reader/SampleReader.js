@@ -12,6 +12,8 @@ const Books = ({fontColor, color, setFontColor, setColor}) => {
         <div className="page-container">
             <Page pageId={1}/>
             <Page pageId={2}/>
+            <Page pageId={3}/>
+            <Page pageId={4}/>
         </div>
     </div>
   )
