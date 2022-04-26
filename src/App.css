@@ -21,7 +21,7 @@ code {
 .app-container {
   width: 100vw;
   min-height: 100vh;
-  padding: 68px 0 100px 0;
+  padding: 58px 0 100px 0;
   display: flex;
   justify-content: center;
   align-items: center;

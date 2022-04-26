@@ -4,7 +4,7 @@ import { useLocation } from 'react-router'
 
 import './navbar.css'
 
-const NavBar = ({color, setColor,fontColor, setFontColor, bgColor,setBgColor}) => {
+const NavBar = ({color, setColor,fontColor, setFontColor, bgColor, setBgColor}) => {
 
   const location = useLocation()
 

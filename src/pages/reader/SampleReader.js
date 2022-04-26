@@ -1,9 +1,10 @@
 import React from 'react'
 import Page from '../../helpers/Page'
+import ReaderControls from '../../components/navigation/ReaderControls'
 
 import './samplereader.css'
 
-const Books = ({fontColor, color, setFontColor, setColor}) => {
+const Books = ({fontColor, color, setFontColor, setColor, bgColor}) => {
 
   const numPages = [1,2,3,4,5]
 
@@ -19,6 +20,7 @@ const Books = ({fontColor, color, setFontColor, setColor}) => {
               })
             }
         </div>
+        <ReaderControls fontColor={fontColor} color={color} setFontColor={setFontColor} setColor={setColor} bgColor={bgColor} />
     </div>
   )
 }

@@ -38,7 +38,7 @@ function App() {
             <Route exact path="" element={<LandingPage fontColor={fontColor} color={color} setColor={setColor} setFontColor={setFontColor} bgColor={bgColor} setBgColor={setBgColor}/>}/>
             <Route exact path="/books" element={<Books fontColor={fontColor} color={color} setColor={setColor} setFontColor={setFontColor}/>}/>
             <Route exact path="/signup" element={<SignUp fontColor={fontColor} color={color} setColor={setColor} setFontColor={setFontColor}/>}/>
-            <Route exact path="/samplereader" element={<SampleReader fontColor={fontColor} color={color} setColor={setColor} setFontColor={setFontColor}/>}/>
+            <Route exact path="/samplereader" element={<SampleReader fontColor={fontColor} color={color} setColor={setColor} setFontColor={setFontColor} bgColor={bgColor} setBgColor={setBgColor}/>}/>
         </Routes>
         <Footer bgColor={bgColor} setBgColor={setBgColor}/>
       </Router> 

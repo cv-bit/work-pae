@@ -23,8 +23,8 @@ export const SamplePageObj =
                 "rgb(0, 240, 100)",
                 50, 
                 20, 
-                100,
-                650,
+                151,
+                40,
                 "key" 
             ], 
             onClickFunctionName: "PlaySound", 
