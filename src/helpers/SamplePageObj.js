@@ -42,7 +42,7 @@ export const SamplePageObj =
                 400,
                 "key" 
             ], 
-            onClickFunctionName: "LinkObjs", 
+            onClickFunctionName: "PlaySound", 
             hoverFunctionName: "displayDarker", 
         },
         {   
@@ -82,7 +82,7 @@ export const SamplePageObj =
             displayArgs: [
                 "", 
                 "100%", 
-                "auto", 
+                "400px", 
                 50, 
                 0,
                 "key"
@@ -184,7 +184,7 @@ export const SamplePageObj =
                 650,
                 "key" 
             ], 
-            onClickFunctionName: "PlaySound", 
+            onClickFunctionName: "LinkObjs", 
             hoverFunctionName: "displayDarker", 
         },
         {   
@@ -200,6 +200,69 @@ export const SamplePageObj =
                 "key" 
             ], 
             onClickFunctionName: "PlaySound", 
+            hoverFunctionName: "displayDarker", 
+        },
+        {   
+            objId: 1,
+            pageId: 5,
+            displayFunctionName: "displayImage", 
+            displayArgs: [
+                "https://source.unsplash.com/random", 
+                "96%", 
+                "90%", 
+                400, 
+                620,
+                "key"
+            ], 
+            onClickFunctionName: "PlaySound", 
+             
+        },
+        {   
+            objId: 1,
+            pageId: 5,
+            displayFunctionName: "displayRect", 
+            displayArgs: [
+                "rgb(100, 75, 255)",
+                100, 
+                50, 
+                150,
+                100,
+                "absolute",
+                "key" 
+            ], 
+            onClickFunctionName: "JumpToVideo", 
+            hoverFunctionName: "displayDarker", 
+        },
+        {   
+            objId: 1,
+            pageId: 5,
+            displayFunctionName: "displayRect", 
+            displayArgs: [
+                "rgb(100, 75, 255)",
+                100, 
+                50, 
+                240,
+                200,
+                "absolute",
+                "key" 
+            ], 
+            onClickFunctionName: "JumpToVideo", 
+            hoverFunctionName: "displayDarker", 
+        },
+        {   
+            objId: 1,
+            pageId: 5,
+            displayFunctionName: "displayRect", 
+            displayArgs: [
+                "rgb(100, 75, 255)",
+                100, 
+                50, 
+                300,
+                350,
+                "absolute",
+                "key" 
+            ], 
+            onClickFunctionName: "JumpToVideo", 
             hoverFunctionName: "displayDarker", 
         },
     ]

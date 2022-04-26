@@ -23,11 +23,11 @@ const NavBar = ({color, setColor,fontColor, setFontColor, bgColor,setBgColor}) =
   return (
     <div className="navbar-container" style={{ backgroundColor: bgColor }}>
       <div style={{display: "flex"}}>
-        <Link className="nav-btn" style={{ backgroundColor: color, color: fontColor, borderRadius: "75px" }} to="/">PAE</Link>
+        <Link className="nav-btn" style={{ backgroundColor: color, color: fontColor, borderRadius: "5px", margin: "0", display: "flex", alignItems: "center", height: "45px" }} to="/">PAE</Link>
         <Link className="nav-btn" style={bgColor === "#e5e4e2" ? {color : "black"} : {color: "white"}} to="/books">Books</Link>
       </div>
-      <div className='nav-right'>
-        <Link className="nav-btn" style={{ backgroundColor: color, color: fontColor, borderRadius: "10px" }} to="/signup">Sign up</Link>
+      <div className='nav-right' style={{display: "flex"}}>
+        <Link className="nav-btn" style={{ backgroundColor: color, color: fontColor, borderRadius: "5px", margin: "0", display: "flex", alignItems: "center", height: "45px" }} to="/signup">Sign up</Link>
       </div>
     </div>
   )

@@ -10,7 +10,6 @@ const Page = ({pageId}) => {
         minWidth: "49%",
         maxHeight: "100%",
         minHeight: '80vh',
-        position: "realtive",
         border: "1px solid black",
         margin: "5px",
         padding: "10px"
@@ -20,9 +19,9 @@ const Page = ({pageId}) => {
     <div style={pageContainer}>
         <h2>page {pageId}</h2>
         {
-            SamplePageObj.map((rect, key) => {
+            SamplePageObj.map((rect, i) => {
                 if (rect.pageId === pageId) {
-                    return DisplayFunctions[rect.displayFunctionName](rect, key)
+                    return DisplayFunctions[rect.displayFunctionName](rect, i)
                 }
             })
         }

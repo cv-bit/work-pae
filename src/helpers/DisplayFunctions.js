@@ -1,5 +1,6 @@
 import OnClickFunctions from './OnClickFunctions'
 import OnHoverFunctions from './OnHoverFunctions'
+import Word from './Word'
 
 const displayVideo = (arr, key) => {
     return <video 
@@ -16,10 +17,11 @@ const displayImage = (arr, key) => {
     return <img 
                 key={key}
                 onClick={OnClickFunctions[arr.onClickFunctionName]} 
-                onMouseEnter={(e) => OnHoverFunctions[arr.hoverFunctionName](e, arr.displayArgs)}
-                onMouseLeave={(e) => OnHoverFunctions[arr.hoverFunctionName](e, arr.displayArgs)}
+                onMouseEnter={(e) => arr.hoverFunctionName ? OnHoverFunctions[arr.hoverFunctionName](e, arr.displayArgs) : ""}
+                onMouseLeave={(e) => arr.hoverFunctionName ? OnHoverFunctions[arr.hoverFunctionName](e, arr.displayArgs) : ""}
                 src={arr.displayArgs[0]} 
                 style={{width: arr.displayArgs[1], height: arr.displayArgs[2], margin: "10px"}}
+                alt="img"
             />
 }
 
@@ -29,7 +31,7 @@ const displayRect = (arr, key) => {
                 onClick={OnClickFunctions[arr.onClickFunctionName]} 
                 onMouseEnter={(e) => OnHoverFunctions[arr.hoverFunctionName](e, arr.displayArgs)}
                 onMouseLeave={(e) => OnHoverFunctions[arr.hoverFunctionName](e, arr.displayArgs)}
-                style={{backgroundColor: arr.displayArgs[0],opacity: "75%", width: arr.displayArgs[1], height: arr.displayArgs[2], margin: "10px"}}
+                style={{backgroundColor: arr.displayArgs[0],opacity: "75%", width: arr.displayArgs[1], height: arr.displayArgs[2], margin: "10px", position: arr.displayArgs[5], top: arr.displayArgs[3], right: arr.displayArgs[4]}}
             ></div>
 }
 
@@ -39,15 +41,10 @@ const displayText = (arr, key) => {
 
     return <div key={key} style={{display: "flex", flexWrap: "wrap", margin: "10px"}}>
                 {wordArray.map((word, i) => {
-                return <p 
-                            key={i}
-                            onClick={OnClickFunctions[arr.onClickFunctionName]} 
-                            onMouseEnter={(e) => OnHoverFunctions[arr.hoverFunctionName](e, arr.displayArgs)}
-                            onMouseLeave={(e) => OnHoverFunctions[arr.hoverFunctionName](e, arr.displayArgs)}
-                            style={{width: "fit-content", height: arr.displayArgs[2], padding: "2.5px", margin: "0"}}>
-                                {word}
-                            </p>})}
-                        </div>
+                    return <Word word={word} key={i} index={i} arr={arr}/>
+                    })
+                }
+            </div>
 }
 
 const invisibleRect = () => {
