@@ -15,7 +15,6 @@ const ReaderControls = ({color, fontColor, setColor, setFontColor, bgColor, setB
         if(location.state && location.state.bgColor) {
         setBgColor(location.state.bgColor)
         }
-        console.log(bgColor)
     }, [color])
 
     const readerControlsContainer = {
