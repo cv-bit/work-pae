@@ -56,7 +56,7 @@ const ReaderControls = ({color, fontColor, setColor, setFontColor, bgColor, setB
 
     const nextPage = () => {
         if (changePage < numPages.length -1) {
-            setChangePage(changePage+1)
+            setChangePage(changePage+2)
         } else {
             setChangePage(numPages.length -1)
         }
@@ -64,7 +64,7 @@ const ReaderControls = ({color, fontColor, setColor, setFontColor, bgColor, setB
 
     const prevPage = () => {
         if(changePage > 0) {
-            setChangePage(changePage - 1)
+            setChangePage(changePage - 2)
         } else {
             setChangePage(0)
         }

@@ -10,11 +10,10 @@ const Books = ({fontColor, color, setFontColor, setColor, bgColor}) => {
 
   const [changePage, setChangePage] = useState(0)
 
-  const numPages = [1,2,3,4,5]
+  const numPages = [1,2,3,4,5, 6, 7]
 
   return (
     <div className="sample-reader-container">
-        <h1 style={{width: "100%", height: "fit-content",textAlign: "center", backgroundColor: color, color: fontColor, margin: "0", padding: "15px 5px"}}>Demo Reader</h1>
         <div className="page-container">
             {/* {
               numPages.map((page, i) => {
@@ -26,7 +25,9 @@ const Books = ({fontColor, color, setFontColor, setColor, bgColor}) => {
             <Swiper>
               {
                 numPages.map((page, i) => {
-                  return <SwiperSlide key={i} changePage={changePage} id={page} color={color} bgColor={bgColor} component={Page} />
+                  return <SwiperSlide key={i} changePage={changePage} id={page} color={color} bgColor={bgColor}>
+                    <Page pageId={page}/>
+                  </SwiperSlide>
                 })
               }
             </Swiper>
