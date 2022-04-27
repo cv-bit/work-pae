@@ -8,7 +8,7 @@ import './samplereader.css'
 
 const Books = ({fontColor, color, setFontColor, setColor, bgColor}) => {
 
-  const [changePage, setChangePage] = useState(false)
+  const [changePage, setChangePage] = useState(0)
 
   const numPages = [1,2,3,4,5]
 
@@ -26,12 +26,12 @@ const Books = ({fontColor, color, setFontColor, setColor, bgColor}) => {
             <Swiper>
               {
                 numPages.map((page, i) => {
-                  return <SwiperSlide key={i} changePage id={page} color={color} bgColor={bgColor} />
+                  return <SwiperSlide key={i} changePage={changePage} id={page} color={color} bgColor={bgColor} />
                 })
               }
             </Swiper>
         </div>
-        <ReaderControls setChangePage={setChangePage} fontColor={fontColor} color={color} setFontColor={setFontColor} setColor={setColor} bgColor={bgColor} />
+        <ReaderControls numPages={numPages} changePage={changePage} setChangePage={setChangePage} fontColor={fontColor} color={color} setFontColor={setFontColor} setColor={setColor} bgColor={bgColor} />
     </div>
   )
 }

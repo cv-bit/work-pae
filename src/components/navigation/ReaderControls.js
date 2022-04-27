@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import { useLocation } from 'react-router'
 
-const ReaderControls = ({color, fontColor, setColor, setFontColor, bgColor, setBgColor, setChangePage}) => {
+const ReaderControls = ({color, fontColor, setColor, setFontColor, bgColor, setBgColor, setChangePage, changePage, numPages}) => {
 
     const location = useLocation()
 
@@ -54,13 +54,29 @@ const ReaderControls = ({color, fontColor, setColor, setFontColor, bgColor, setB
         }
     }
 
+    const nextPage = () => {
+        if (changePage < numPages.length -1) {
+            setChangePage(changePage+1)
+        } else {
+            setChangePage(numPages.length -1)
+        }
+    } 
+
+    const prevPage = () => {
+        if(changePage > 0) {
+            setChangePage(changePage - 1)
+        } else {
+            setChangePage(0)
+        }
+    }
+
   return (
     <div style={readerControlsContainer}>
         <div style={controlsContainer}>
-            <button onMouseEnter={(e) => btnHover(e)} onMouseLeave={(e) => btnHover(e)} style={controlerBtn}>previous</button>
+            <button onMouseEnter={(e) => btnHover(e)} onMouseLeave={(e) => btnHover(e)} style={controlerBtn} onClick={prevPage}>previous</button>
         </div>
         <div style={controlsContainer}>
-            <button onMouseEnter={(e) => btnHover(e)} onMouseLeave={(e) => btnHover(e)} style={controlerBtn}>next</button>
+            <button onMouseEnter={(e) => btnHover(e)} onMouseLeave={(e) => btnHover(e)} style={controlerBtn} onClick={nextPage}>next</button>
         </div>
     </div>
   )
