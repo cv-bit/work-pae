@@ -2,6 +2,7 @@
     min-width: 300px;
     width: 100%;
     min-height: 100px;
+    height: 90vh;
     overflow: hidden;
     margin: 5px;
     border: 1px solid black;

@@ -9,7 +9,7 @@ const Page = ({pageId}) => {
         maxWidth: "575px",
         minWidth: "49%",
         maxHeight: "100%",
-        minHeight: '80vh',
+        minHeight: '85vh',
         border: "1px solid black",
         margin: "5px",
         padding: "10px"
@@ -17,7 +17,7 @@ const Page = ({pageId}) => {
 
   return (
     <div style={pageContainer}>
-        <h2>page {pageId}</h2>
+        <h2 style={{margin: "0"}}>page {pageId}</h2>
         {
             SamplePageObj.map((rect, i) => {
                 if (rect.pageId === pageId) {

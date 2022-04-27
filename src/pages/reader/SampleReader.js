@@ -16,17 +16,17 @@ const Books = ({fontColor, color, setFontColor, setColor, bgColor}) => {
     <div className="sample-reader-container">
         <h1 style={{width: "100%", height: "fit-content",textAlign: "center", backgroundColor: color, color: fontColor, margin: "0", padding: "15px 5px"}}>Demo Reader</h1>
         <div className="page-container">
-            {
+            {/* {
               numPages.map((page, i) => {
                 return <div key={i} style={{position: "relative"}}>
                           <Page key={i} pageId={page}/>
                       </div>
               })
-            }
+            } */}
             <Swiper>
               {
                 numPages.map((page, i) => {
-                  return <SwiperSlide key={i} changePage={changePage} id={page} color={color} bgColor={bgColor} />
+                  return <SwiperSlide key={i} changePage={changePage} id={page} color={color} bgColor={bgColor} component={Page} />
                 })
               }
             </Swiper>
