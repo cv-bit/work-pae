@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react'
 import { useLocation } from 'react-router'
 
-const ReaderControls = ({color, fontColor, setColor, setFontColor, bgColor, setBgColor}) => {
+const ReaderControls = ({color, fontColor, setColor, setFontColor, bgColor, setBgColor, setChangePage}) => {
 
     const location = useLocation()
 
@@ -22,10 +22,11 @@ const ReaderControls = ({color, fontColor, setColor, setFontColor, bgColor, setB
         position: "fixed",
         bottom: "0",
         width: "100vw",
-        height: "75px",
         color: fontColor,
         display: "flex",
-        justifyContent: "space-around"
+        justifyContent: "space-around",
+        padding: "10px",
+        zIndex: "50"
     }
 
     const controlsContainer = {
@@ -34,16 +35,15 @@ const ReaderControls = ({color, fontColor, setColor, setFontColor, bgColor, setB
         display: "flex",
         justifyContent: "center",
         alignItems: "center",
-        padding: "15px"
     }
 
     const controlerBtn = {
         backgroundColor: color,
         color: fontColor,
-        padding: "15px",
+        padding: "10px",
         border: "none",
         borderRadius: "5px",
-        fontSize: "1.2rem"
+        fontSize: "1rem"
     }
 
     const btnHover = (e) => {
@@ -57,10 +57,10 @@ const ReaderControls = ({color, fontColor, setColor, setFontColor, bgColor, setB
   return (
     <div style={readerControlsContainer}>
         <div style={controlsContainer}>
-            <button onMouseEnter={(e) => btnHover(e)} onMouseLeave={(e) => btnHover(e)} style={controlerBtn}>previous page</button>
+            <button onMouseEnter={(e) => btnHover(e)} onMouseLeave={(e) => btnHover(e)} style={controlerBtn}>previous</button>
         </div>
         <div style={controlsContainer}>
-            <button onMouseEnter={(e) => btnHover(e)} onMouseLeave={(e) => btnHover(e)} style={controlerBtn}>next page</button>
+            <button onMouseEnter={(e) => btnHover(e)} onMouseLeave={(e) => btnHover(e)} style={controlerBtn}>next</button>
         </div>
     </div>
   )

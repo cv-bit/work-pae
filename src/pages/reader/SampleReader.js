@@ -1,10 +1,14 @@
-import React from 'react'
+import React, {useState} from 'react'
 import Page from '../../helpers/Page'
 import ReaderControls from '../../components/navigation/ReaderControls'
+import Swiper from '../../components/swiper/Swiper'
+import SwiperSlide from '../../components/swiper/SwiperSlide'
 
 import './samplereader.css'
 
 const Books = ({fontColor, color, setFontColor, setColor, bgColor}) => {
+
+  const [changePage, setChangePage] = useState(false)
 
   const numPages = [1,2,3,4,5]
 
@@ -19,8 +23,15 @@ const Books = ({fontColor, color, setFontColor, setColor, bgColor}) => {
                       </div>
               })
             }
+            <Swiper>
+              {
+                numPages.map((page, i) => {
+                  return <SwiperSlide key={i} changePage id={page} color={color} bgColor={bgColor} />
+                })
+              }
+            </Swiper>
         </div>
-        <ReaderControls fontColor={fontColor} color={color} setFontColor={setFontColor} setColor={setColor} bgColor={bgColor} />
+        <ReaderControls setChangePage={setChangePage} fontColor={fontColor} color={color} setFontColor={setFontColor} setColor={setColor} bgColor={bgColor} />
     </div>
   )
 }

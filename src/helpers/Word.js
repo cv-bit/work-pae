@@ -18,7 +18,7 @@ const Word = ({word, index, arr}) => {
                 onClick={() => isKeyword ? OnClickFunctions.Keyword(index) : OnClickFunctions[arr.onClickFunctionName](index)} 
                 onMouseEnter={(e) => OnHoverFunctions[arr.hoverFunctionName](e, arr.displayArgs)}
                 onMouseLeave={(e) => OnHoverFunctions[arr.hoverFunctionName](e, arr.displayArgs)}
-                style={{backgroundColor: isKeyword ? "#fff0f5" : "", width: "fit-content", height: arr.displayArgs[2], padding: "2.5px", margin: "0", fontWeight: isKeyword ? "bold" : ""}}>
+                style={{backgroundColor: isKeyword ? localStorage.getItem('color') ? localStorage.getItem('color') :  "#fbaed2" : "", width: "fit-content", height: arr.displayArgs[2], padding: "2.5px", margin: "0", fontWeight: isKeyword ? "bold" : ""}}>
                     {word}
             </p>
   

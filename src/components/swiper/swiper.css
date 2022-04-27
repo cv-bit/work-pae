@@ -1,8 +1,16 @@
 .swiper-container {
+    min-width: 300px;
     width: 100%;
+    min-height: 100px;
     overflow: hidden;
+    margin: 5px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    position: relative;
 }
 
 .swiperslide-container {
-    width: 100%
+    width: 100%;
 }

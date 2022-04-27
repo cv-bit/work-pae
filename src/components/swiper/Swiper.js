@@ -1,9 +1,9 @@
 import React from 'react'
 
-const Swiper = () => {
+const Swiper = ({children}) => {
   return (
     <div className="swiper-container">
-
+        {children}
     </div>
   )
 }
