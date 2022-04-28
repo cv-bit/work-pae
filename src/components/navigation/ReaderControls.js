@@ -43,7 +43,7 @@ const ReaderControls = ({color, fontColor, setColor, setFontColor, bgColor, setB
         padding: "10px",
         border: "none",
         borderRadius: "5px",
-        fontSize: "1rem"
+        fontSize: "1rem",
     }
 
     const btnHover = (e) => {

@@ -12,8 +12,8 @@ class OnClickFunctions {
     HighlightText() {
         console.log("highlight text")
     }
-    Keyword(i) {
-        console.log("keyword" + i)
+    Keyword(word) {
+        console.log("keyword " + word)
     }
 }
 

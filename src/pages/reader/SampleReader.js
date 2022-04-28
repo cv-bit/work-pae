@@ -26,8 +26,8 @@ const Books = ({fontColor, color, setFontColor, setColor, bgColor}) => {
               {
                 numPages.map((page, i) => {
                   return <SwiperSlide key={i} changePage={changePage} id={page} color={color} bgColor={bgColor}>
-                    <Page pageId={page}/>
-                  </SwiperSlide>
+                          <Page pageId={page}/>
+                        </SwiperSlide>
                 })
               }
             </Swiper>

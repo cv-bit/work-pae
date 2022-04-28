@@ -30,7 +30,7 @@ function App() {
   // }, [color])
 
   return (
-    <div className="app-container">
+    <div className="app-container" >
       <Router>
         <NavBar bgColor={bgColor} setBgColor={setBgColor} fontColor={fontColor} color={color} setColor={setColor} setFontColor={setFontColor}/>
         <ScrollToTop />
