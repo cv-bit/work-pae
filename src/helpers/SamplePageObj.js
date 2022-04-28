@@ -16,7 +16,7 @@ export const SamplePageObj =
             hoverFunctionName: "displayDarker", 
         },
         {   
-            objId: 1,
+            objId: 2,
             pageId: 2,
             displayFunctionName: "displayRect", 
             displayArgs: [
@@ -31,7 +31,7 @@ export const SamplePageObj =
             hoverFunctionName: "displayDarker", 
         },
         {   
-            objId: 1,
+            objId: 3,
             pageId: 1,
             displayFunctionName: "displayRect", 
             displayArgs: [
@@ -46,7 +46,7 @@ export const SamplePageObj =
             hoverFunctionName: "displayDarker", 
         },
         {   
-            objId: 1,
+            objId: 4,
             pageId: 2,
             displayFunctionName: "displayRect", 
             displayArgs: [
@@ -61,7 +61,7 @@ export const SamplePageObj =
             hoverFunctionName: "displayDarker", 
         },
         {   
-            objId: 1,
+            objId: 5,
             pageId: 1,
             displayFunctionName: "displayImage", 
             displayArgs: [
@@ -76,7 +76,7 @@ export const SamplePageObj =
             hoverFunctionName: "displayLighter", 
         },
         {   
-            objId: 1,
+            objId: 6,
             pageId: 3,
             displayFunctionName: "displayVideo", 
             displayArgs: [
@@ -91,7 +91,7 @@ export const SamplePageObj =
             hoverFunctionName: "displayLighter", 
         },
         {   
-            objId: 1,
+            objId: 7,
             pageId: 1,
             displayFunctionName: "displayText", 
             displayArgs: [
@@ -104,7 +104,7 @@ export const SamplePageObj =
             hoverFunctionName: "displayDarker", 
         },
         {   
-            objId: 1,
+            objId: 8,
             pageId: 2,
             displayFunctionName: "displayText", 
             displayArgs: [
@@ -117,7 +117,7 @@ export const SamplePageObj =
             hoverFunctionName: "displayDarker", 
         },
         {   
-            objId: 1,
+            objId: 9,
             pageId: 2,
             displayFunctionName: "displayVideo", 
             displayArgs: [
@@ -132,7 +132,7 @@ export const SamplePageObj =
             hoverFunctionName: "displayLighter", 
         },
         {   
-            objId: 1,
+            objId: 10,
             pageId: 3,
             displayFunctionName: "displayText", 
             displayArgs: [
@@ -145,7 +145,7 @@ export const SamplePageObj =
             hoverFunctionName: "displayDarker", 
         },
         {   
-            objId: 1,
+            objId: 11,
             pageId: 4,
             displayFunctionName: "displayText", 
             displayArgs: [
@@ -158,7 +158,7 @@ export const SamplePageObj =
             hoverFunctionName: "displayDarker", 
         },
         {   
-            objId: 1,
+            objId: 12,
             pageId: 4,
             displayFunctionName: "displayImage", 
             displayArgs: [
@@ -173,7 +173,7 @@ export const SamplePageObj =
             hoverFunctionName: "displayLighter", 
         },
         {   
-            objId: 1,
+            objId: 13,
             pageId: 4,
             displayFunctionName: "displayRect", 
             displayArgs: [
@@ -188,7 +188,7 @@ export const SamplePageObj =
             hoverFunctionName: "displayDarker", 
         },
         {   
-            objId: 1,
+            objId: 14,
             pageId: 4,
             displayFunctionName: "displayRect", 
             displayArgs: [
@@ -203,13 +203,13 @@ export const SamplePageObj =
             hoverFunctionName: "displayDarker", 
         },
         {   
-            objId: 1,
+            objId: 15,
             pageId: 5,
             displayFunctionName: "displayImage", 
             displayArgs: [
                 "https://source.unsplash.com/random", 
-                "96%", 
                 "90%", 
+                "auto", 
                 400, 
                 620,
                 "key"
@@ -218,7 +218,7 @@ export const SamplePageObj =
              
         },
         {   
-            objId: 1,
+            objId: 16,
             pageId: 5,
             displayFunctionName: "displayRect", 
             displayArgs: [
@@ -230,11 +230,11 @@ export const SamplePageObj =
                 "absolute",
                 "key" 
             ], 
-            onClickFunctionName: "JumpToVideo", 
+            onClickFunctionName: "LinkObjs", 
             hoverFunctionName: "displayDarker", 
         },
         {   
-            objId: 1,
+            objId: 17,
             pageId: 5,
             displayFunctionName: "displayRect", 
             displayArgs: [
@@ -244,25 +244,25 @@ export const SamplePageObj =
                 240,
                 200,
                 "absolute",
-                "key" 
+                "18" 
             ], 
-            onClickFunctionName: "JumpToVideo", 
+            onClickFunctionName: "LinkObjs", 
             hoverFunctionName: "displayDarker", 
         },
         {   
-            objId: 1,
+            objId: 18,
             pageId: 5,
             displayFunctionName: "displayRect", 
             displayArgs: [
                 "rgb(100, 75, 255)",
                 100, 
                 50, 
-                300,
+                "100%",
                 350,
                 "absolute",
-                "key" 
+                "17" 
             ], 
-            onClickFunctionName: "JumpToVideo", 
+            onClickFunctionName: "LinkObjs", 
             hoverFunctionName: "displayDarker", 
         },
     ]

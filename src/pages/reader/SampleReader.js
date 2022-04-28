@@ -10,7 +10,7 @@ const Books = ({fontColor, color, setFontColor, setColor, bgColor}) => {
 
   const [changePage, setChangePage] = useState(0)
 
-  const numPages = [1,2,3,4,5, 6, 7]
+  const numPages = [1,2,3,4,5,6,7]
 
   return (
     <div className="sample-reader-container">

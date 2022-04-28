@@ -28,10 +28,10 @@ const displayImage = (arr, key) => {
 const displayRect = (arr, key) => {
     return <div 
                 key={key}
-                onClick={OnClickFunctions[arr.onClickFunctionName]} 
+                onClick={() => OnClickFunctions[arr.onClickFunctionName](arr.displayArgs[6])} 
                 onMouseEnter={(e) => OnHoverFunctions[arr.hoverFunctionName](e, arr.displayArgs)}
                 onMouseLeave={(e) => OnHoverFunctions[arr.hoverFunctionName](e, arr.displayArgs)}
-                style={{backgroundColor: arr.displayArgs[0],opacity: "75%", width: arr.displayArgs[1], height: arr.displayArgs[2], margin: "10px", position: arr.displayArgs[5], top: arr.displayArgs[3], right: arr.displayArgs[4]}}
+                style={{backgroundColor: arr.displayArgs[0],opacity: ".75", width: arr.displayArgs[1], height: arr.displayArgs[2], margin: "10px", position: arr.displayArgs[5], top: arr.displayArgs[3], right: arr.displayArgs[4]}}
             ></div>
 }
 
