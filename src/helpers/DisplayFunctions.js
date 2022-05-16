@@ -3,7 +3,7 @@ import OnHoverFunctions from './OnHoverFunctions'
 import Word from './Word'
 
 const displayVideo = (arr, key) => {
-    return <video 
+    return  <video 
                 key={key}
                 onClick={OnClickFunctions[arr.onClickFunctionName]} 
                 src={arr.displayArgs[0]} 
@@ -14,7 +14,7 @@ const displayVideo = (arr, key) => {
 }
 
 const displayImage = (arr, key) => {
-    return <img 
+    return  <img 
                 key={key}
                 onClick={OnClickFunctions[arr.onClickFunctionName]} 
                 onMouseEnter={(e) => arr.hoverFunctionName ? OnHoverFunctions[arr.hoverFunctionName](e, arr.displayArgs) : ""}
@@ -26,7 +26,7 @@ const displayImage = (arr, key) => {
 }
 
 const displayRect = (arr, key) => {
-    return <div 
+    return  <div 
                 key={key}
                 onClick={() => OnClickFunctions[arr.onClickFunctionName](arr.displayArgs[6])} 
                 onMouseEnter={(e) => OnHoverFunctions[arr.hoverFunctionName](e, arr.displayArgs)}
@@ -39,7 +39,7 @@ const displayText = (arr, key) => {
 
     let wordArray = arr.displayArgs[0].split(' ')
 
-    return <div key={key} style={{display: "flex", flexWrap: "wrap", margin: "10px"}}>
+    return  <div key={key} style={{display: "flex", flexWrap: "wrap", margin: "10px"}}>
                 {wordArray.map((word, i) => {
                     return <Word word={word} key={i} index={i} arr={arr}/>
                     })
